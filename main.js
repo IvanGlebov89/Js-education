@@ -1,23 +1,11 @@
-const isAdmin = false;
-const canWrite = true;
-
-console.log(`Системный файл ${isAdmin && canWrite}`);
-console.log(`Обычный файл ${isAdmin || canWrite}`);
-console.log(`Инвентируем права ${!isAdmin}`);
-const isEdited = true;
-const isSuperAdmin = true;
-console.log(
-  `Файл редактирование ${isAdmin && canWrite && (!isEdited || isSuperAdmin)}`
-);
-// задачка
-
-const balace = 1050;
-const isBanned = true;
-const isExist = true;
-const isSelling = true;
-
-if (balace > 1000 && isBanned && isExist && isSelling) {
-  console.log("вы можете купить игру");
-} else {
-  console.log("игра вам недоступна");
+function logoName(name, surname) {
+  console.log(`mu name ${name} ${surname}`);
 }
+logoName("Ivan", "Glebov");
+
+function countDepositSum(depositUSD, month, rate) {
+  const sum = depositUSD * (1 + rate / 12) ** month;
+  return sum;
+}
+const example1 = countDepositSum(1000, 24, 0.12);
+console.log(example1);
