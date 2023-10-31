@@ -15,3 +15,6 @@ const canAccessWebsite = (age) => {
 };
 
 console.log(canAccessWebsite(16));
+
+const canAccessWebsite2 = (age) => (age < 18 ? false : true);
+console.log(canAccessWebsite2(21));
