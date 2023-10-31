@@ -5,3 +5,13 @@ const toPowerArrow = (num, power) => {
 };
 console.log(toPowerArrow(2));
 console.log(toPowerArrow(2, 5));
+
+const canAccessWebsite = (age) => {
+  if (age < 18) {
+    return false;
+  } else {
+    return true;
+  }
+};
+
+console.log(canAccessWebsite(16));
